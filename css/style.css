@@ -1,0 +1,255 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+  cursor: pointer;
+}
+header{
+  position: fixed;
+  width: 100%;
+  background: #FFF;
+  z-index: 9999;
+  overflow: hidden;
+}
+header .logo{
+  width: 736px;
+  height: 120px;
+  margin: 0 auto;
+}
+header .logo a{
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+header .logo a img{
+  width: 736px;
+  height: 120px;
+}
+.cart-and-search{
+  width: 420px;
+  margin-top: -90px;
+  margin-bottom: 10px;
+}
+.cart-and-search a{
+  color: #434544;
+  font-weight:  bold;
+  text-decoration: none;
+}
+.cart-and-search .search{
+  position: relative;
+  display:  inline-block;
+  width: 120px;
+}
+.cart-and-search .search input{
+  border: 0;
+  left: 0;
+  width: 100%;
+  background: #efefef;
+  color: #666;
+  padding: 5px 10px;
+  border-radius: 8px;
+  outline: 0;
+}
+.cart-and-search .search i{
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  color: #666
+}
+.user-links{
+  width: 420px;
+}
+.user-links li{
+  display: inline-block;
+}
+.user-links li a{
+  color: #434544;
+  padding: 0 10px;
+  border-left: 1px solid #434544;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all .3s ease-in-out;
+}
+.user-links li a:hover{
+  color: #434544c2;
+}
+.user-links li:first-of-type a{
+  padding-left: 0;
+  border: 0;
+}
+nav{
+  background: #182350;
+  top: 15px;
+  margin-bottom: 15px;
+  border-bottom:  4px solid #ffd500;
+}
+nav:before{
+  content:"";
+  display: block;
+  clear: both;
+}
+nav ul.navbar-nav{
+  margin: 0 auto;
+}
+nav .nav-link{
+  color: #FFF !important;
+  padding-right: 30px !important;
+  padding-left: 30px !important;
+  font-size: 18px;
+}
+
+div.banner,
+div.banner img{
+  width: 100%;
+  height: 100%;
+}
+div.banner{
+  margin-top: 100;
+  height: 330px;
+}
+.show-thumbs{
+  padding: 10px;
+}
+.show-thumbs .show-now{
+  margin: 30px auto;
+}
+.show-thumbs .show-now a{
+  color: #182350;
+  border: 2px solid #182350;
+  padding: 10px;
+  text-decoration: none;
+}
+.show-thumbs .info{
+  margin: 20px auto;
+  padding: 0 10px;
+}
+.thumbs{
+  margin: 0;
+}
+.thumbs >div >div{
+  width: 100%;
+  margin: 20px 0;
+}
+.thumbs >div >div a{
+  display: block;
+  padding: 10px;
+  width: 100%;
+  height: 260px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #434544;
+}
+.thumbs >div >div a img{
+  width: 100%;
+  height: 100%;
+  border: 2px solid #ffd102;
+
+}
+.navbar-light .navbar-toggler-icon{
+   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.navbar-light .navbar-toggler {
+    color: rgba(0,0,0,.5);
+    border: 1px solid;
+    border-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+  }
+.share-links{
+  position: fixed;
+  bottom: 10px;
+}
+.share-links li a{
+  text-align: center;
+  padding: 10px 15px;
+  font-size: 20px;
+  display: block;
+  margin: 10px 0;
+  color: #FFF;
+  position: relative;
+  left: -35px;
+}
+.share-links li .wordpress{
+  background: #1d6f94;
+}
+.share-links li .envelope{
+  background: #8c2667;
+}
+.share-links li .youtube{
+  background: #c3342e;
+}
+.share-links li .instagram{
+  background: #cc2d6f;
+}
+.share-links li .facebook{
+  background: #385694;
+}
+.share-links li .pinterest{
+  background: #af222b;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1330px) {
+  .cart-and-search{
+    margin: 0;
+    margin-right: auto;
+    float: left;
+    padding-left: 35px;
+  }
+}
+@media (max-width:991px) {
+  nav .nav-link{
+    text-align: center;
+    transition: all .3s ease-in-out;
+  }
+  nav .nav-link:hover{
+    color: #182350!important;
+    background-color: #FFF;
+  }
+}
+@media (max-width:865px) {
+  .user-links{
+    margin: 10px auto;
+    padding: 0 5px;
+  }
+  .cart-and-search{
+    float: none;
+    padding: 0 10px;
+  }
+}
+@media (max-width:460px) {
+  header .logo{
+    width: 380px;
+    height: 115px;
+    padding: 0 10px;
+  }
+  header .logo a img{
+    width: 100%;
+  }
+  .cart-and-search .search{
+    width: 240px;
+  }
+}
+@media (max-width:380px) {
+  header .logo {
+    width: 100%;
+    height: 115px;
+  }
+  .cart-and-search .search {
+    width: 200px;
+  }
+  .user-links li a{
+    padding: 0px 6px;
+    font-size: 12px;
+  }
+}
